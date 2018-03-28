@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+@authors: Roberto Bolgheroni, Matheus Moreira
+!-->
+<html lang="pt-br">
+  <head>
+    <title>Matheus & Roberto Sheets API</title>
+    <meta charset='utf-8' />
+    
+  </head>
+  <body>
+    <p>Monitoria do Santana</p>
+
+    <!--Add buttons to initiate auth sequence and sign out-->
+    <button id="authorize-button" style="display: none;">Authorize</button>
+    <button id="signout-button" style="display: none;">Sign Out</button>
+    <button id="list-majors" style="display: none;">Mostrar Conteúdo</button>
+    <button id="clear-majors" style="display: none;">Limpar Conteúdo</button>
+    <p><label id="date-label-id" style="display: none">Insira a data que deseja ver os dados da monitoria:</label> 
+        <input id="date-id" type="date" style="display: none"></p>
+    <button id="rows-button" style="display: none;">Mostrar Número de linhas</button>
+    
+
+    <pre id="content"></pre>
+
+    <script type="text/javascript" src="libs/main.js"></script>
+    <script async defer src="https://apis.google.com/js/api.js"
+      onload="this.onload=function(){};handleClientLoad()"
+      onreadystatechange="if (this.readyState === 'complete') this.onload()">
+    </script>
+    
+  </body>
+</html>
